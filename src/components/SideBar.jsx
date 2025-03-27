@@ -216,17 +216,17 @@ export default function Sidebar({ children }) {
                   className={`space-y-2 ps-2  ${isListOpen ? " h-full visible mt-2" : "h-0 invisible"} `}
                 >
                   <div className="">
-                    <SideBarListItem>
+                    <SideBarListItem to={"/invoices"}>
                       <MonetizationOnIcon /> Invoice
                     </SideBarListItem>
                   </div>
                   <div className="">
-                    <SideBarListItem>
+                    <SideBarListItem to={"/estimate"}>
                       <MonetizationOnIcon /> Estimate
                     </SideBarListItem>
                   </div>
                   <div className="">
-                    <SideBarListItem>
+                    <SideBarListItem to={"/expenses"}>
                       <MonetizationOnIcon /> Expenses
                     </SideBarListItem>
                   </div>
@@ -238,7 +238,7 @@ export default function Sidebar({ children }) {
                 </div>
               </div>
 
-              <SideBarListItem>
+              <SideBarListItem to={"/teams"}>
                 <GroupsIcon /> Teams
               </SideBarListItem>
 
@@ -300,7 +300,7 @@ export default function Sidebar({ children }) {
           </div>
         </div>
 
-        <div className="h-screen md:h-full w-screen  lg:w-full  ">
+        <div className="h-[calc(100vh_-_5rem)] overflow-y-scroll no-scrollbar  w-screen  lg:w-full  ">
           {children}
         </div>
       </div>

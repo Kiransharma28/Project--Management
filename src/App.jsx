@@ -7,6 +7,9 @@ import Project from './pages/Project'
 import Tasks from './pages/Tasks';
 import { BrowserRouter, Routes, Route, useLocation } from "react-router";
 import LoadingBar from 'react-top-loading-bar';
+import Teams from './pages/Teams';
+import Estimate from './pages/Estimate';
+
 
 function App() {
   
@@ -24,6 +27,10 @@ function App() {
         <Route path='/tasks'  element = {<Tasks/>}/>
         <Route path='/contracts'  element = {<Contracts/>}/>
         <Route path='/invoices'  element = {<Invoices/>}/>
+        <Route path='/teams'  element = {<Teams/>}/>
+        <Route path='/estimate'  element = {<Estimate/>}/>
+        
+        
         {/* <Route path='/c'  element = {<Contracts/>}/> */}
       </Routes>
     </BrowserRouter>
