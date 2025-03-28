@@ -57,9 +57,9 @@ const Estimate = () => {
   const handleEditClose = () => {
     setEditOpen(false);
   };
- 
-    
- // Delete modal open and close
+
+
+  // Delete modal open and close
   const [deleteOpen, setDeleteOpen] = useState(false);
   const handleDeleteOpen = () => {
     setDeleteOpen(true);
@@ -99,7 +99,7 @@ const Estimate = () => {
           </div>
           <div>
             <button onClick={handleOpen}
-          className='bg-[var(--primary1)] text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-[var(--primary2)] shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all'> <AddIcon /> Add Estimate</button>
+              className='bg-[var(--primary1)] text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-[var(--primary2)] shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all'> <AddIcon /> Add Estimate</button>
           </div>
         </div>
 
@@ -197,7 +197,7 @@ const Estimate = () => {
                     </IconButton>
                   </TableCell>
                 </TableRow>
-                 <TableRow>
+                <TableRow>
                   <TableCell>21/03/25</TableCell>
                   <TableCell>28/06/26</TableCell>
                   <TableCell>Client 1</TableCell>
@@ -235,9 +235,9 @@ const Estimate = () => {
                   </TableCell>
                 </TableRow>
               </TableBody>
-             
+
             </Table>
-            
+
           </TableContainer>
         </div>
 
@@ -268,9 +268,9 @@ const Estimate = () => {
                         name="estimatedate"
                         id="estimatedate"
                       />
-                      </Grid2>
-                      
-                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">{/*Due Date*/}
+                    </Grid2>
+
+                    <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">{/*Due Date*/}
                       <label htmlFor="estimateduedate">Due Date</label>
                       <input
                         type="date"
@@ -294,7 +294,7 @@ const Estimate = () => {
                         <option value="">Client 4</option>
                       </select>
                       <small></small>
-                      </Grid2>
+                    </Grid2>
                     <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
                       {/*Project*/}
                       <label htmlFor="estimateproject">Project</label>
@@ -308,8 +308,8 @@ const Estimate = () => {
                       <small></small>
                     </Grid2>
                   </Grid2>
-                <Grid2 container spacing={2} className="w-full">
-                   {/*Sub Total*/}
+                  <Grid2 container spacing={2} className="w-full">
+                    {/*Sub Total*/}
                     <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
                       <label htmlFor="subtotal">Sub Total</label>
                       <input
@@ -334,7 +334,7 @@ const Estimate = () => {
                       <small></small>
                     </Grid2>
                   </Grid2>
-               <Grid2 container spacing={2} className="w-full">
+                  <Grid2 container spacing={2} className="w-full">
                     {/*CGST*/}
                     <Grid2 size={{ xs: 12 }} className="inputData">
                       <label htmlFor="estimatecgst">CGST</label>
@@ -347,65 +347,65 @@ const Estimate = () => {
                       <small></small>
                     </Grid2>
                   </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
-                {/*VAT*/}
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
+                    {/*VAT*/}
                     <label htmlFor="estimatevat">VAT</label>
                     <input
-                    type="text"
+                      type="text"
                       placeholder="VAT"
                       name="estimatevat"
                       id="estimatevat"
-                   />
+                    />
                     <small></small>
-                </Grid2>
-             <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
-              {/*Other Taxes*/}
+                  </Grid2>
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
+                    {/*Other Taxes*/}
                     <label htmlFor="estimateothertaxes">Other Taxes</label>
                     <input
-                    type="text"
+                      type="text"
                       placeholder="number"
                       name="estimateothertaxes"
                       id="estimateothertaxes"
                     />
                     <small></small>
                   </Grid2>
-             <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
-              {/*Discount*/}
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
+                    {/*Discount*/}
                     <label htmlFor="estimatediscount">Discount</label>
                     <input
-                    type="text"
+                      type="text"
                       placeholder="number"
                       name="estimatediscount"
                       id="estimatediscont"
                     />
                     <small></small>
                   </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
-              {/*Total*/}
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
+                    {/*Total*/}
                     <label htmlFor="estimatetotal">Total</label>
                     <input
-                    type="text"
+                      type="text"
                       placeholder="number"
                       name="estimatetotal"
                       id="estimatetotal"
                     />
                     <small></small>
                   </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
-              {/*Status*/}
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
+                    {/*Status*/}
                     <label htmlFor="estimatestatus">Status</label>
                     <select name="estimatestatus" id="estimatestatus">
-                        <option value="">Select </option>
-                        <option value="">Rejected</option>
-                        <option value="">Pending</option>
-                        <option value="">Accepted</option>
-                        </select>
-                        <small></small>
-                    </Grid2>
-                    
-                    {/*note*/}
-                    <div className="w-full inputData">
-                       <label htmlFor="estimatenote">Note</label>
+                      <option value="">Select </option>
+                      <option value="">Rejected</option>
+                      <option value="">Pending</option>
+                      <option value="">Accepted</option>
+                    </select>
+                    <small></small>
+                  </Grid2>
+
+                  {/*note*/}
+                  <div className="w-full inputData">
+                    <label htmlFor="estimatenote">Note</label>
                     <textarea
                       rows={4}
                       placeholder="note"
@@ -415,19 +415,19 @@ const Estimate = () => {
                     <small></small>
                   </div>{/*cancel button*/}
                   <div className="flex flex-row flex-wrap gap-4 justify-end">
-                     <Button onClick={handleClose} variant="contained"color="inherit" >Cancel</Button> 
+                    <Button onClick={handleClose} variant="contained" color="inherit" >Cancel</Button>
                     {/*submit button*/}
                     <Button varient="contained" class='bg-[var(--primary1)] text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-[var(--primary2)] shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all'>Submit
-                      </Button>
+                    </Button>
                   </div>
                 </form>
               </div>
             </div>
           </Box>
-          </Modal>
-          {/* Delete Modal*/}
+        </Modal>
+        {/* Delete Modal*/}
 
-       <Modal
+        <Modal
           open={editOpen}
           onClose={handleEditClose}
           aria-labelledby="child-modal-title"
@@ -453,8 +453,8 @@ const Estimate = () => {
                         name="estimatedate"
                         id="estimatedate"
                       />
-                     </Grid2>
-                     {/* Estimate Due Date*/}
+                    </Grid2>
+                    {/* Estimate Due Date*/}
                     <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
                       <label htmlFor="estimateDueDate">Due Date</label>
                       <input
@@ -479,7 +479,7 @@ const Estimate = () => {
                         <option value="">Client 3</option>
                         <option value="">Client 4</option>
                       </select>
-                     <small></small>
+                      <small></small>
                     </Grid2>
                     {/* Estimate Project*/}
                     <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">
@@ -583,42 +583,42 @@ const Estimate = () => {
                       <small></small>
                     </Grid2>
                   </Grid2>
-                  
-            
-                    <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">{/*Estimate Status*/}
-                      <label htmlFor="estimateStatus">Status</label>
-                      <select name="estimatestatus" id="estimatestatus">
+
+
+                  <Grid2 size={{ xs: 12, sm: 6 }} className="inputData">{/*Estimate Status*/}
+                    <label htmlFor="estimateStatus">Status</label>
+                    <select name="estimatestatus" id="estimatestatus">
                       <option value="">Select </option>
-                        <option value="">Rejected</option>
-                        <option value="">Pending</option>
-                        <option value="">Accepted</option>
-                        </select>
-                      <small></small>
-                    </Grid2>
-                    
-                    {/*Estimate Note*/}
-                    <div className="w-full inputData">
+                      <option value="">Rejected</option>
+                      <option value="">Pending</option>
+                      <option value="">Accepted</option>
+                    </select>
+                    <small></small>
+                  </Grid2>
+
+                  {/*Estimate Note*/}
+                  <div className="w-full inputData">
                     <label htmlFor="estimateNote">Note</label>
-                      <textarea
-                        rows={4}
-                       placeholder="estimate Note"
-                        name="estimateNote"
-                        id="estimateNote"
-                        >
-                      </textarea>
-                      <small></small>
-                      </div>
-                      {/*cancel button*/}
-                    
+                    <textarea
+                      rows={4}
+                      placeholder="estimate Note"
+                      name="estimateNote"
+                      id="estimateNote"
+                    >
+                    </textarea>
+                    <small></small>
+                  </div>
+                  {/*cancel button*/}
+
                   <div className="flex flex-row flex-wrap gap-4 justify-end">
-                     <Button onClick={handleEditClose} variant="contained"color="inherit"  >Cancel</Button> 
-                     {/*submit button*/}
+                    <Button onClick={handleEditClose} variant="contained" color="inherit"  >Cancel</Button>
+                    {/*submit button*/}
                     <Button varient="contained" class='bg-[var(--primary1)] text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-[var(--primary2)] shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all'
-                      
+
                     >
                       Submit
-                      </Button>
-                    </div>
+                    </Button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -628,25 +628,25 @@ const Estimate = () => {
         {/* Delete Modal*/}
 
         <Modal
-                  open={deleteOpen}
-                  onClose={handleDeleteClose}
-                  aria-labelledby="child-modal-title"
-                  aria-describedby="child-modal-description"
-                  className=""
+          open={deleteOpen}
+          onClose={handleDeleteClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+          className=""
+        >
+          <Box sx={{ ...style, width: 400 }} className="rounded-[.5rem] ">
+            <div className="w-full py-3 ">
+              <div>Do you want to delete ?</div>
+              <div className="flex mt-8 justify-end gap-4">
+                <Button onClick={handleDeleteClose} variant="contained" color="inherit"
                 >
-                  <Box sx={{ ...style, width: 400 }} className="rounded-[.5rem] ">
-                    <div className="w-full py-3 ">
-                      <div>Do you want to delete ?</div>
-                      <div className="flex mt-8 justify-end gap-4">
-                        <Button onClick={handleDeleteClose} variant="contained"color="inherit" 
-                        >
-                          Close
-                        </Button>
-                        <Button variant="contained" class='bg-red-700 text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-red-600 shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all '>Delete</Button>
-                      </div>
-                    </div>
-                  </Box>
-                </Modal>
+                  Close
+                </Button>
+                <Button variant="contained" class='bg-red-700 text-white px-4 py-2 rounded-[5px] cursor-pointer hover:bg-red-600 shadow-[2px_2px_5px] hover:shadow-gray-400 transition-all '>Delete</Button>
+              </div>
+            </div>
+          </Box>
+        </Modal>
 
         {/* View Modal */}
         <Modal
@@ -732,7 +732,7 @@ const Estimate = () => {
                               <div>10000</div>
                             </Grid2>
                           </Grid2>
-                          
+
                           <Grid2 container spacing={2} className="">
                             <Grid2 size={4} className="font-bold space-y-2">
                               <div className="">Toatal : </div>
@@ -751,85 +751,85 @@ const Estimate = () => {
                             </Grid2>
                           </Grid2>
 
-                          </div>
+                        </div>
                       )}
-                      
+
                       {activeTab === "Client Details" && (
                         <div className="space-y-2">
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Client Name : </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Client Name : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>name</div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>name</div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Client Email : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>example@email.com</div>
+                            </Grid2>
                           </Grid2>
-                        </Grid2>
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Client Email : </div>
-                          </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>example@email.com</div>
-                          </Grid2>
-                        </Grid2>
 
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Client Number : </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Client Number : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>1093735</div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>1093735</div>
-                          </Grid2>
-                        </Grid2>
 
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Client Address : </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Client Address : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>Lorem ipsum </div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>Lorem ipsum </div>
-                          </Grid2>
-                        </Grid2>
 
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Country :  </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Country :  </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>India</div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>India</div>
-                          </Grid2>
-                        </Grid2>
 
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Company Name : </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Company Name : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>Lorem ipsum</div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>Lorem ipsum</div>
-                          </Grid2>
-                        </Grid2>
 
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Company Email : </div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Company Email : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>company@gmail.com</div>
+                            </Grid2>
                           </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>company@gmail.com</div>
+                          <Grid2 container spacing={2} className="">
+                            <Grid2 size={4} className="font-bold space-y-2">
+                              <div className="">Comapny Contact : </div>
+                            </Grid2>
+                            <Grid2 size={8} className="space-y-2">
+                              <div>
+                                837355738
+                              </div>
+                            </Grid2>
                           </Grid2>
-                        </Grid2>
-                        <Grid2 container spacing={2} className="">
-                          <Grid2 size={4} className="font-bold space-y-2">
-                            <div className="">Comapny Contact : </div>
-                          </Grid2>
-                          <Grid2 size={8} className="space-y-2">
-                            <div>
-                              837355738
-                            </div>
-                          </Grid2>
-                        </Grid2>
-                      </div>
+                        </div>
                       )}
-                      
+
                     </div>
                   </div>
                 </div>
